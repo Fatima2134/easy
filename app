@@ -21,50 +21,6 @@
   <script src="script.js"></script>
 </body>
 </html>
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f4f8;
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-}
-
-.container {
-  max-width: 500px;
-  margin: auto;
-  padding: 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1 {
-  color: #00695c;
-}
-
-button {
-  margin: 10px;
-  padding: 12px 20px;
-  font-size: 16px;
-  border: none;
-  background-color: #009688;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #00796b;
-}
-
-.instructions {
-  margin-top: 20px;
-  padding: 15px;
-  background: #e0f2f1;
-  border-left: 5px solid #00796b;
-  text-align: left;
-}
-
 const appInstructions = {
   whatsapp: "To use WhatsApp Web: Make sure you have WhatsApp on your phone. Click the button above, then scan the QR code using WhatsApp on your mobile device.",
   instagram: "To use Instagram: Click the button to open Instagram. Login if necessary, then use the navigation bar to access messages, posts, and reels.",
@@ -80,9 +36,49 @@ function openApp(app) {
     youtube: "https://www.youtube.com/"
   };
 
-  // Show instructions
   document.getElementById("instructions").textContent = appInstructions[app];
-
-  // Open the app in a new tab
   window.open(urls[app], "_blank");
 }
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+h1 {
+  color: #00695c;
+}
+button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #009688;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #00796b;
+}
+.instructions {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e0f2f1;
+  border-left: 5px solid #00796b;
+  text-align: left;
+}
+
+
+
