@@ -27,7 +27,6 @@ const appInstructions = {
   tiktok: "To use TikTok: Click the button to open TikTok. Browse videos, use the search bar, and explore trending content.",
   youtube: "To use YouTube: Click the button to open YouTube. Use the search bar or sign in to access your subscriptions and playlists."
 };
-
 function openApp(app) {
   const urls = {
     whatsapp: "https://web.whatsapp.com/",
@@ -35,12 +34,9 @@ function openApp(app) {
     tiktok: "https://www.tiktok.com/",
     youtube: "https://www.youtube.com/"
   };
-
   document.getElementById("instructions").textContent = appInstructions[app];
   window.open(urls[app], "_blank");
 }
-
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f4f8;
